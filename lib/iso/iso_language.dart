@@ -17,6 +17,7 @@ enum IsoLanguage {
   Italian,
   Russian,
   Malay,
+  Indonesian,
 }
 
 String IsoLanguageToString(IsoLanguage isoLanguage) {
@@ -57,6 +58,8 @@ String IsoLanguageToString(IsoLanguage isoLanguage) {
       return 'fil';
     case IsoLanguage.Vietnam:
       return 'vi';
+    case IsoLanguage.Indonesian:
+      return 'id';
   }
 }
 
@@ -83,4 +86,5 @@ const _LanguageStringToIsoEnumMap = <String, IsoLanguage>{
   'zh': IsoLanguage.Chinese,
   'fil': IsoLanguage.Filipino,
   'vi': IsoLanguage.Vietnam,
+  'id': IsoLanguage.Indonesian,
 };

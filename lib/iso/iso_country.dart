@@ -19,6 +19,7 @@ enum IsoCountry {
   Malaysia,
   HongKong,
   Taiwan,
+  Indonesia,
 }
 
 String IsoCountryToString(IsoCountry isoCountry) {
@@ -63,6 +64,8 @@ String IsoCountryToString(IsoCountry isoCountry) {
       return 'IR';
     case IsoCountry.Taiwan:
       return 'TW';
+    case IsoCountry.Indonesia:
+      return 'ID';
   }
 }
 
@@ -91,4 +94,5 @@ const _CountryStringToIsoEnumMap = <String, IsoCountry>{
   'US': IsoCountry.UnitedStates,
   'VN': IsoCountry.VietNam,
   'TW': IsoCountry.Taiwan,
+  'ID': IsoCountry.Indonesia,
 };
